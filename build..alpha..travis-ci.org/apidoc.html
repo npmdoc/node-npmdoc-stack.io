@@ -1,0 +1,376 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >stack.io (v0.2.9)</a>
+</h1>
+<h4>ZeroRPC bridge to the web</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stack.io">module stack.io</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stack.io.</span>io.model</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stack.io.</span>io.server</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stack.io.</span>io.validation</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stack.io.model">module stack.io.model</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.model.Request">
+            function <span class="apidocSignatureSpan">stack.io.model.</span>Request
+            <span class="apidocSignatureSpan">(service, method, args, session)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.model.Response">
+            function <span class="apidocSignatureSpan">stack.io.model.</span>Response
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.model.Session">
+            function <span class="apidocSignatureSpan">stack.io.model.</span>Session
+            <span class="apidocSignatureSpan">(initial)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.model.createSyntheticError">
+            function <span class="apidocSignatureSpan">stack.io.model.</span>createSyntheticError
+            <span class="apidocSignatureSpan">(name, message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stack.io.server">module stack.io.server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.server.ioServer">
+            function <span class="apidocSignatureSpan">stack.io.server.</span>ioServer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stack.io.validation">module stack.io.validation</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.validation.validateCallback">
+            function <span class="apidocSignatureSpan">stack.io.validation.</span>validateCallback
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.validation.validateInvocation">
+            function <span class="apidocSignatureSpan">stack.io.validation.</span>validateInvocation
+            <span class="apidocSignatureSpan">(service, method, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.validation.validateNumber">
+            function <span class="apidocSignatureSpan">stack.io.validation.</span>validateNumber
+            <span class="apidocSignatureSpan">(name, obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stack.io.validation.validateOptions">
+            function <span class="apidocSignatureSpan">stack.io.validation.</span>validateOptions
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stack.io" id="apidoc.module.stack.io">module stack.io</a></h1>
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stack.io.model" id="apidoc.module.stack.io.model">module stack.io.model</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.model.Request" id="apidoc.element.stack.io.model.Request">
+        function <span class="apidocSignatureSpan">stack.io.model.</span>Request
+        <span class="apidocSignatureSpan">(service, method, args, session)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Request(service, method, args, session) {
+    this.service = service;
+    this.method = method;
+    this.args = args;
+    this.session = session;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.model.Response" id="apidoc.element.stack.io.model.Response">
+        function <span class="apidocSignatureSpan">stack.io.model.</span>Response
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Response() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.model.Session" id="apidoc.element.stack.io.model.Session">
+        function <span class="apidocSignatureSpan">stack.io.model.</span>Session
+        <span class="apidocSignatureSpan">(initial)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Session(initial) {
+    for(var key in initial) {
+        this[key] = initial[key];
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.model.createSyntheticError" id="apidoc.element.stack.io.model.createSyntheticError">
+        function <span class="apidocSignatureSpan">stack.io.model.</span>createSyntheticError
+        <span class="apidocSignatureSpan">(name, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createSyntheticError(name, message) {
+    return {
+        name: name,
+        message: message,
+        traceback: null
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stack.io.server" id="apidoc.module.stack.io.server">module stack.io.server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.server.ioServer" id="apidoc.element.stack.io.server.ioServer">
+        function <span class="apidocSignatureSpan">stack.io.server.</span>ioServer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function IOServer() {
+    this._connectors = {};
+    this._middleware = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+This will run stack.io on port 8080.
+
+If you want to run a server programmatically, e.g. to add custom middleware,
+require the module and instantiate a new server:
+
+var stack = require(&#x22;stack.io&#x22;);
+var server = new stack.<span class="apidocCodeKeywordSpan">ioServer</span>();
+...
+
+Here&#x27;s a full example:
+
+var stack = require(&#x22;stack.io&#x22;),
+    express = require(&#x22;express&#x22;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stack.io.validation" id="apidoc.module.stack.io.validation">module stack.io.validation</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.validation.validateCallback" id="apidoc.element.stack.io.validation.validateCallback">
+        function <span class="apidocSignatureSpan">stack.io.validation.</span>validateCallback
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateCallback(obj) {
+    if(typeof(obj) != &#x27;function&#x27;) throw &#x22;expected a function&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.validation.validateInvocation" id="apidoc.element.stack.io.validation.validateInvocation">
+        function <span class="apidocSignatureSpan">stack.io.validation.</span>validateInvocation
+        <span class="apidocSignatureSpan">(service, method, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateInvocation(service, method, args) {
+    checkIdentifier(service, &#x22;service&#x22;);
+    checkIdentifier(method, &#x22;method&#x22;);
+    if(!(args instanceof Array)) throw &#x22;expected args to be an array&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.validation.validateNumber" id="apidoc.element.stack.io.validation.validateNumber">
+        function <span class="apidocSignatureSpan">stack.io.validation.</span>validateNumber
+        <span class="apidocSignatureSpan">(name, obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateNumber(name, obj) {
+    if(typeof(obj) != &#x27;number&#x27;) throw &#x22;expected &#x22; + name + &#x22; to be a number&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stack.io.validation.validateOptions" id="apidoc.element.stack.io.validation.validateOptions">
+        function <span class="apidocSignatureSpan">stack.io.validation.</span>validateOptions
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateOptions(options) {
+    if(typeof(options) != &#x27;object&#x27;) throw &#x22;expected options to be an object&#x22;;
+
+    for(var key in OPTIONS_CHECKS) {
+        if(key in options) {
+            if(typeof(options[key]) != OPTIONS_CHECKS[key]) {
+                throw &#x22;option &#x27;&#x22; + key + &#x22;&#x27; is of the incorrect type; expected a(n) &#x22; + expectedType;
+            }
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
