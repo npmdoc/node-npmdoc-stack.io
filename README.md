@@ -1,6 +1,6 @@
 # npmdoc-stack.io
 
-#### api documentation for  stack.io (v0.2.9)  [![npm package](https://img.shields.io/npm/v/npmdoc-stack.io.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stack.io) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stack.io.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stack.io)
+#### basic api documentation for  stack.io (v0.2.9)  [![npm package](https://img.shields.io/npm/v/npmdoc-stack.io.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stack.io) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stack.io.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stack.io)
 
 #### ZeroRPC bridge to the web
 
